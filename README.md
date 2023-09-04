@@ -41,14 +41,83 @@ npm start
 
 ### Timezone List
 
-- URL: ``
-- Method: `-`
-- Description:
+- URL: `/api/timezones`
+- Method: `GET`
+- Description: Method for obtainig list of timezones in a array of strings and app configurated timezones
 
 - Body:
 
 ```JSON
+{
+    "list": [
+        "Africa/Abidjan",
+        "Africa/Algiers",
+        "Africa/Bissau",
+        // ...
+    ],
+    "current": [
+        "America/Argentina/Buenos_Aires",
+        "Africa/Cairo",
+        "Asia/Dubai",
+        // ...
+    ]
+}
+```
 
+### Timezone Detail
+
+- URL: `/api/timezones/:name`
+- Method: `GET`
+- Description: Method for obtainig detail of timezones with more info
+
+- Body:
+
+```JSON
+{
+    "abbreviation": "-03",
+    "client_ip": "",
+    "datetime": "2023-09-04T11:02:04.344184-03:00",
+    "day_of_week": 1,
+    "day_of_year": 247,
+    "dst": false,
+    "dst_from": null,
+    "dst_offset": 0,
+    "dst_until": null,
+    "raw_offset": -10800,
+    "timezone": "America/Argentina/Buenos_Aires",
+    "unixtime": 1693836124,
+    "utc_datetime": "2023-09-04T14:02:04.344184+00:00",
+    "utc_offset": "-03:00",
+    "week_number": 36
+}
+```
+
+### Timezone Add
+
+- URL: `/api/timezones/:name`
+- Method: `PUT`
+- Description: Method for adding a timezone in the array of clocks in redis db
+
+- Body:
+
+```JSON
+{
+  "message": "Africa/Abidjan added to clocks."
+}
+```
+
+### Timezone Delete
+
+- URL: `/api/timezones/:name`
+- Method: `DELETE`
+- Description: Method for removing a timezone in the array of clocks in redis db
+
+- Body:
+
+```JSON
+{
+  "message": "Africa/Abidjan deleted of clocks."
+}
 ```
 
 ## Scripts
