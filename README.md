@@ -126,6 +126,8 @@ npm start
 - `npm start`: Starts the server in development mode using `nodemon`.
 - `npm run build`: Builds the TypeScript files to the `dist` directory.
 
+<br><br>
+
 ## Quick Start with Docker
 
 Below are the steps to get this project up and running using Docker.
