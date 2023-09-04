@@ -125,3 +125,23 @@ npm start
 - `npm start`: Builds the TypeScript files and starts the server using `node`
 - `npm start`: Starts the server in development mode using `nodemon`.
 - `npm run build`: Builds the TypeScript files to the `dist` directory.
+
+## Quick Start with Docker
+
+Below are the steps to get this project up and running using Docker.
+
+### Step 1: Build the Docker Image
+
+To get started, you need to build the Docker image for this project. Open a terminal and execute the following command in the root directory of the project:
+
+```bash
+docker build -t backend-challenge-vibragaming .
+```
+
+### Step 2: Run the Docker Container
+
+Once you have built the image, you can run a Docker container based on that image. Use the following command to run the container and expose port 3000:
+
+```bash
+docker run -p 3000:3000 backend-challenge-vibragaming
+```
