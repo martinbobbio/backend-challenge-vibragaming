@@ -9,7 +9,7 @@
   <br>
 </h1>
 <h4 align="center">
-  <a href="https://github.com/martinbobbio/app-challenge-vibragaming">Vibragaming - Frontend</a>
+  <a href="https://github.com/martinbobbio/frontend-challenge-vibragaming">Vibragaming - Frontend</a>
 </h4>
 <br>
 
