@@ -39,7 +39,7 @@ npm start
 
 4. The API will be accessible at http://localhost:3000/api.
 
-### Coin Detail
+### Timezone List
 
 - URL: ``
 - Method: `-`
